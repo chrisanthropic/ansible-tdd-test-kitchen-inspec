@@ -1,4 +1,7 @@
-[![Build Status](https://travis-ci.org/chrisanthropic/ansible-test-kitchen-inspec.svg?branch=master)](https://travis-ci.org/chrisanthropic/ansible-test-kitchen-inspec.svg?branch=master)
+[![Build Status](https://travis-ci.org/chrisanthropic/ansible-tdd-test-kitchen-inspec.svg?branch=master)](https://travis-ci.org/chrisanthropic/ansible-tdd-test-kitchen-inspec.svg?branch=master)
+
+# What
+A stub of a repo to demonstrate how to use test-kitchen, docker, inspec, and travis-ci to test your Ansible roles.
 
 ## Getting Started
 - git clone the repo
