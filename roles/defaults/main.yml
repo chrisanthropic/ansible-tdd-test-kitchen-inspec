@@ -1,0 +1,9 @@
+---
+#######################
+## Set some DEFAULTS ##
+#######################
+hostname: "testing"
+username: "USERNAME"
+password: "PASSWORD"
+
+timezone: "America/Los_Angeles"

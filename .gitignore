@@ -1,0 +1,10 @@
+*.kate-swp
+.bundle
+.directory
+.kitchen
+
+Gemfile.lock
+playbook.retry
+roles/vars/main.yml
+bin
+vendor

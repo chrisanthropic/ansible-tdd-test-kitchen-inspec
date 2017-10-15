@@ -1,0 +1,29 @@
+---
+- name: Stop apt-get from hanging on security updates
+  lineinfile:
+    path: /etc/gai.conf
+    line: precedence ::ffff:0:0/96 100
+
+- name: Install Aptitude
+  become: true
+  apt:
+    name: aptitude
+    update_cache: yes
+    cache_valid_time: 86400 #One day
+
+- name: Update and upgrade apt packages
+  become: true
+  apt:
+    upgrade: yes
+    update_cache: yes
+    cache_valid_time: 86400 #One day
+
+- name: Enable Multiverse Repo
+  apt_repository:
+    repo: deb http://archive.ubuntu.com/ubuntu xenial restricted universe main multiverse
+    state: present
+
+- name: Enable Security Repo
+  apt_repository:
+    repo: deb http://security.ubuntu.com/ubuntu xenial-security main restricted universe multiverse
+    state: present

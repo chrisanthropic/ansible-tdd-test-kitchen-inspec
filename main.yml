@@ -1,0 +1,7 @@
+---
+- hosts: default
+  vars_files:
+    - [ "roles/vars/main.yml" ]
+
+  tasks:
+    - import_tasks: roles/tasks/base.yml
